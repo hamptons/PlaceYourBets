@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DD62A85E-C28C-4DD8-82F5-BBC713116685}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PlaceYourBets.My.MyApplication</StartupObject>
+    <RootNamespace>PlaceYourBets</RootNamespace>
+    <AssemblyName>PlaceYourBets</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>ftp://ftp.predictresults.co.uk/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://predictresults.co.uk/PYB/</InstallUrl>
+    <UpdateUrl>http://predictresults.co.uk/PYB/</UpdateUrl>
+    <ProductName>Place Your Bets</ProductName>
+    <PublisherName>Sam Hampton</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PlaceYourBets.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PlaceYourBets.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0E5CF21C60492CCD268639AD2CAF19F9CAF3B74E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PlaceYourBets_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>PlaceYourBets_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\Downloads\JSONConvert\Bin\Net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="RegistrationForm.Designer.vb">
+      <DependentUpon>RegistrationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm.Designer.vb">
+      <DependentUpon>MenuForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PredictionLeagueTableForm.Designer.vb">
+      <DependentUpon>PredictionLeagueTableForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PredictionLeagueTableForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PredictionLeagueUserControl.Designer.vb">
+      <DependentUpon>PredictionLeagueUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PredictionLeagueUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReviewForm.Designer.vb">
+      <DependentUpon>ReviewForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmittedForm.Designer.vb">
+      <DependentUpon>SubmittedForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubmittedForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserList.vb" />
+    <Compile Include="UserPredictionsUserControl.Designer.vb">
+      <DependentUpon>UserPredictionsUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserPredictionsUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users.vb" />
+    <Compile Include="Predictions.vb" />
+    <Compile Include="FixtureBox.Designer.vb">
+      <DependentUpon>FixtureBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FixtureBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FixtureBuilder.vb" />
+    <Compile Include="FixtureList.vb" />
+    <Compile Include="Fixture.vb" />
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="FixtureReviewUserControl.Designer.vb">
+      <DependentUpon>FixtureReviewUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FixtureReviewUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FixtureBox.resx">
+      <DependentUpon>FixtureBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationForm.resx">
+      <DependentUpon>RegistrationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm.resx">
+      <DependentUpon>MenuForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixtureReviewUserControl.resx">
+      <DependentUpon>FixtureReviewUserControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PredictionLeagueTableForm.resx">
+      <DependentUpon>PredictionLeagueTableForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PredictionLeagueUserControl.resx">
+      <DependentUpon>PredictionLeagueUserControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReviewForm.resx">
+      <DependentUpon>ReviewForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmittedForm.resx">
+      <DependentUpon>SubmittedForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPredictionsUserControl.resx">
+      <DependentUpon>UserPredictionsUserControl.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <None Include="Resources\icon2.jpg" />
+    <None Include="PlaceYourBets_TemporaryKey.pfx" />
+    <None Include="Resources\pitch1.jpg" />
+    <None Include="Resources\pitch.jpg" />
+    <None Include="Resources\ARS.jpg" />
+    <None Include="Resources\NWC.png" />
+    <None Include="Resources\WHU.png" />
+    <None Include="Resources\WBA.png" />
+    <None Include="Resources\TOT.png" />
+    <None Include="Resources\SWA.png" />
+    <None Include="Resources\SUN.png" />
+    <None Include="Resources\STO.png" />
+    <None Include="Resources\SOU.png" />
+    <None Include="Resources\QPR.png" />
+    <None Include="Resources\MNU.png" />
+    <None Include="Resources\MNC.png" />
+    <None Include="Resources\LIV.png" />
+    <None Include="Resources\LEI.png" />
+    <None Include="Resources\HUL.png" />
+    <None Include="Resources\EVE.png" />
+    <None Include="Resources\CRY.png" />
+    <None Include="Resources\CHE.png" />
+    <None Include="Resources\BUR.png" />
+    <None Include="Resources\AST.png" />
+    <None Include="Resources\ARS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

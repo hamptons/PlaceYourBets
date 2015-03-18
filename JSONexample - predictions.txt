@@ -1,0 +1,47 @@
+{
+  "stock": [
+    {
+      "Home_Team": "Manchester United",
+      "Away_Team": "Hull City",
+      "Date": null,
+      "Prediction": "1"
+    },
+    {
+      "Home_Team": "Liverpool",
+      "Away_Team": "Stoke City",
+      "Date": null,
+      "Prediction": "1"
+    },
+    {
+      "Home_Team": "West Ham United",
+      "Away_Team": "Newcastle United",
+      "Date": null,
+      "Prediction": "3"
+    },
+    {
+      "Home_Team": "Queens Park Rangers",
+      "Away_Team": "Leicester City",
+      "Date": null,
+      "Prediction": "1"
+    },
+    {
+      "Home_Team": "West Bromwich Albion",
+      "Away_Team": "Arsenal",
+      "Date": null,
+      "Prediction": "2"
+    },
+    {
+      "Home_Team": "Sunderland",
+      "Away_Team": "Chelsea",
+      "Date": null,
+      "Prediction": "2"
+    },
+    {
+      "Home_Team": "Southampton",
+      "Away_Team": "Manchester City",
+      "Date": null,
+      "Prediction": "2"
+    }
+  ],
+  "success": 1
+}

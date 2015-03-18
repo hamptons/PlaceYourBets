@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <assemblyIdentity name="PlaceYourBets.application" version="1.1.0.7" publicKeyToken="c58208b0ad89e235" language="neutral" processorArchitecture="x86" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <description asmv2:publisher="Sam Hampton" asmv2:product="Place Your Bets" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <deployment install="true" mapFileExtensions="true">
+    <subscription>
+      <update>
+        <beforeApplicationStartup />
+      </update>
+    </subscription>
+    <deploymentProvider codebase="http://predictresults.co.uk/PYB/PlaceYourBets.application" />
+  </deployment>
+  <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
+    <framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
+  </compatibleFrameworks>
+  <dependency>
+    <dependentAssembly dependencyType="install" codebase="Application Files\PlaceYourBets_1_1_0_7\PlaceYourBets.exe.manifest" size="9532">
+      <assemblyIdentity name="PlaceYourBets.exe" version="1.1.0.7" publicKeyToken="c58208b0ad89e235" language="neutral" processorArchitecture="x86" type="win32" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Bqh03TfjZwg4QYKKPoxdE+rKx4s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=ADASTRA\hamptons" issuerKeyHash="98482c621a7f47e0bade40a141b6f8445bf0c716" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>8e7qZxWgK342nS3Y6q8FDJN4DoI=</DigestValue></Reference></SignedInfo><SignatureValue>n+j9Dy17HPwiDUkQrrITlmwilD6iU2MEUaikMQHyjKER1IkY6dbI2D+dt1gYJ8CHWWwesWFbl4b77f/3m9dIOuJMpeLeXKMXTU6EHB3NESIY2B3KZBN5dH48rd7UTrMwF2BeTd3HpgPY7gYaGz3joh8wuEEZAbeBphXaR54XT9U=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uO3EY1ThedsTU2x+ufRgvKQCZq2eKNSSwivqQ0AnGQtPdkYyt/bLIRQ5hkJy97e5ptqf0oDeQesADV5Dh2PNNwCvgOQgHrZnkzDxUoeaolZEOY5LhSSTPWHqj5r++qOXgN7BJuvB0dTpoJfvaW20isYCv9JetzpNMY919cjh4m0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="820e78930c05afead82d9d367e2ba01567eaeef1" Description="" Url=""><as:assemblyIdentity name="PlaceYourBets.application" version="1.1.0.7" publicKeyToken="c58208b0ad89e235" language="neutral" processorArchitecture="x86" xmlns="urn:schemas-microsoft-com:asm.v1" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ADASTRA\hamptons</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>j+IiPP6oOxrAwbcgaaq1kP0dmw0=</DigestValue></Reference></SignedInfo><SignatureValue>IHYpw7gH+t6+xJg4+nhvwqHFzaOHpcDzWrDmKlY9M+9FdASXQfYyLFBrQftfmtqTzXk3UGa7seFwW5RqH2B8lpy4fZQqcrNRWtPEsn4tnh3uO7njd4AUE4l43i8AUynSt46wTnX8hRJncXDzfnhToQTwR2ThLCWBtMW3hEQK1eI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uO3EY1ThedsTU2x+ufRgvKQCZq2eKNSSwivqQ0AnGQtPdkYyt/bLIRQ5hkJy97e5ptqf0oDeQesADV5Dh2PNNwCvgOQgHrZnkzDxUoeaolZEOY5LhSSTPWHqj5r++qOXgN7BJuvB0dTpoJfvaW20isYCv9JetzpNMY919cjh4m0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQH210He71VrdA0lhH5+u5lTANBgkqhkiG9w0BAQUFADArMSkwJwYDVQQDHiAAQQBEAEEAUwBUAFIAQQBcAGgAYQBtAHAAdABvAG4AczAeFw0xNDExMjcxNDU2NTFaFw0xNTExMjcyMDU2NTFaMCsxKTAnBgNVBAMeIABBAEQAQQBTAFQAUgBBAFwAaABhAG0AcAB0AG8AbgBzMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC47cRjVOF52xNTbH659GC8pAJmrZ4o1JLCK+pDQCcZC092RjK39sshFDmGQnL3t7mm2p/SgN5B6wANXkOHY803AK+A5CAetmeTMPFSh5qiVkQ5jkuFJJM9YeqPmv76o5eA3sEm68HR1Omgl+9pbbSKxgK/0l63Ok0xj3X1yOHibQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAF2DRr/DgZqM/GA4lf/lctnRBuX6eiRAle2rzBmmnm8QpaTfF/BuTFJh5/3Dg4+V2I/7PrNiycRGzhYbwA0+yBN6khungV5dGtqLI50DUuX8iK8ROmD4c6MnQraXjKUsX8J8OJZ/fQSrBJag8RVzAClaFzJi0lOnyikMcW5MX4wt</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

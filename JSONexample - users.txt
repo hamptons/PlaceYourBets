@@ -1,0 +1,13 @@
+  {
+  "stock": [ 
+    {
+      "user": "Jason",
+      "submitted": "1"
+    },
+    {
+      "user": "Michael",
+      "submitted": "1"
+    }
+  ],
+  "success": 1
+}
