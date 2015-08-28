@@ -13,35 +13,39 @@ Public Class RegistrationForm
 
     Private Sub registerButton_Click(sender As System.Object, e As System.EventArgs) Handles registerButton.Click
         Dim fb = New FixtureBuilder
-        Dim userList = New List(Of String)
+        'Dim userList = New List(Of String)
         Dim username As String
-        userList = fb.getPRUsers()
+        Dim password As String
+        Dim email As String
+        'userList = fb.getPRUsers()
         username = Me.usernameTextBox.Text
-        Dim urlBase As String = "http://www.predictresults.co.uk/pradeep/PYBMembers.php?user='"
+        password = Me.passwordTextBox.Text
+        email = Me.emailTextBox.Text
+        Dim urlBase As String = "http://www.predictresults.co.uk/API/PYBMembers.php?user="
         Dim url As String
 
-        If userList.Contains(username) Then
-            url = urlBase + username + "'"
+        'If userList.Contains(username) Then
+        url = urlBase + username + "&password=" + password
 
-            Dim request As HttpWebRequest = CType(WebRequest.Create(url), HttpWebRequest)
-            Dim response As HttpWebResponse = CType(request.GetResponse(), HttpWebResponse)
+        Dim request As HttpWebRequest = CType(WebRequest.Create(url), HttpWebRequest)
+        Dim response As HttpWebResponse = CType(request.GetResponse(), HttpWebResponse)
 
-            Dim receiveStream As Stream = response.GetResponseStream()
-            Dim readStream As New StreamReader(receiveStream, Encoding.UTF8)
+        Dim receiveStream As Stream = response.GetResponseStream()
+        Dim readStream As New StreamReader(receiveStream, Encoding.UTF8)
 
-            response.Close()
-            readStream.Close()
+        response.Close()
+        readStream.Close()
 
-            MsgBox("User '" + username + "' " + "registered as Place Your Bets user")
-            ContainerForm.Show()
-            Dim fLoginUserControl As New LoginUserControl
-            ContainerForm.MainFlowLayoutPanel.Controls.Add(fLoginUserControl)
-            ContainerForm.AcceptButton = fLoginUserControl.loginButton
-            Me.Close()
+        MsgBox("User '" + username + "' " + "registered as Place Your Bets user")
+        ContainerForm.Show()
+        Dim fLoginUserControl As New LoginUserControl
+        ContainerForm.MainFlowLayoutPanel.Controls.Add(fLoginUserControl)
+        ContainerForm.AcceptButton = fLoginUserControl.loginButton
+        Me.Close()
 
-        Else
-            MsgBox("Username not recognised")
-        End If
+        'Else
+        '    MsgBox("Username not recognised")
+        'End If
     End Sub
 
     Private Sub closeButton_Click(sender As System.Object, e As System.EventArgs) Handles closeButton.Click

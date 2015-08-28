@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>ftp://hamcodev.com/httpdocs/PlaceYourBets/|ftp://hamcodev.com/httpdocs/|ftp://hamcodev.com/httpdocs/sites/PlaceYourBets/|ftp://ftp.predictresults.co.uk/|\\laptop-samh.adastra.co.uk\transfer\TheFunStore\</PublishUrlHistory>
-    <InstallUrlHistory>http://hamcodev.com/PlaceYourBets/|http://hamcodev.com/|http://hamcodev.com/PlaceYourBets/Publish.htm/|http://hamcodev.com/PYB/|http://predictresults.co.uk/PYB/</InstallUrlHistory>
+    <PublishUrlHistory>ftp://hamcodev.com/httpdocs/|ftp://hamcodev.com/httpdocs/httpdocs/|ftp://hamcodev.com/httpdocs/PlaceYourBets/|ftp://hamcodev.com/httpdocs/sites/PlaceYourBets/|ftp://ftp.predictresults.co.uk/</PublishUrlHistory>
+    <InstallUrlHistory>http://hamcodev.com/|http://hamcodev.com/PlaceYourBets/|http://hamcodev.com/PlaceYourBets/Publish.htm/|http://hamcodev.com/placeyourbets.htm/|http://hamcodev.com/PYB/</InstallUrlHistory>
     <SupportUrlHistory />
     <UpdateUrlHistory>http://predictresults.co.uk/PYB/</UpdateUrlHistory>
     <BootstrapperUrlHistory />

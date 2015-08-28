@@ -5,7 +5,7 @@ Public Class FixtureBuilder
 
     Public Function getFixtures()
         Dim client = New WebClient()
-        Dim reply = client.DownloadString("http://www.predictresults.co.uk/pradeep/SamH.php")
+        Dim reply = client.DownloadString("http://www.predictresults.co.uk/API/SamH.php")
 
         'Dim fileReader As String
         'fileReader = My.Computer.FileSystem.ReadAllText("C:\Users\hamptons\Google Drive\PlaceYourBets\JSONexample - fixtures.txt")
@@ -18,7 +18,7 @@ Public Class FixtureBuilder
 
     Public Function getBet()
         Dim client = New WebClient()
-        Dim reply = client.DownloadString("http://www.predictresults.co.uk/pradeep/PYBPredictions.php")
+        Dim reply = client.DownloadString("http://www.predictresults.co.uk/API/PYBPredictions.php")
 
         'Dim fileReader As String
         'fileReader = My.Computer.FileSystem.ReadAllText("C:\Users\hamptons\Google Drive\PlaceYourBets\JSONexample - predictions.txt")
@@ -31,7 +31,7 @@ Public Class FixtureBuilder
 
     Public Function getUsers()
         Dim client = New WebClient
-        Dim reply = client.DownloadString("http://www.predictresults.co.uk/pradeep/PYBUsers.php")
+        Dim reply = client.DownloadString("http://www.predictresults.co.uk/API/PYBUsers.php")
         Dim f = JsonConvert.DeserializeObject(Of UserList)(reply)
 
         'Dim fileReader As String
@@ -50,7 +50,7 @@ Public Class FixtureBuilder
 
     Public Function getScores()
         Dim client = New WebClient
-        Dim reply = client.DownloadString("http://www.predictresults.co.uk/pradeep/UserStats.php")
+        Dim reply = client.DownloadString("http://www.predictresults.co.uk/API/UserStats.php")
         Dim f = JsonConvert.DeserializeObject(Of UserList)(reply)
 
         'Dim fileReader As String
@@ -62,7 +62,7 @@ Public Class FixtureBuilder
 
     Public Function usersSubmitted()
         Dim client = New WebClient
-        Dim reply = client.DownloadString("http://www.predictresults.co.uk/pradeep/WhoBet.php")
+        Dim reply = client.DownloadString("http://www.predictresults.co.uk/API/WhoBet.php")
         Dim f = JsonConvert.DeserializeObject(Of UserList)(reply)
 
         Dim list As New List(Of String)
@@ -77,7 +77,7 @@ Public Class FixtureBuilder
 
         End Try
 
-        
+
 
         Return list
 
@@ -85,7 +85,7 @@ Public Class FixtureBuilder
 
     Public Function getUsersAndIds()
         Dim client = New WebClient
-        Dim reply = client.DownloadString("http://www.predictresults.co.uk/pradeep/PYBUsers.php")
+        Dim reply = client.DownloadString("http://www.predictresults.co.uk/API/PYBUsers.php")
         Dim f = JsonConvert.DeserializeObject(Of UserList)(reply)
 
         Dim dictionary As New Dictionary(Of String, Integer)
@@ -100,7 +100,7 @@ Public Class FixtureBuilder
 
     Public Function getIdsandUsers()
         Dim client = New WebClient
-        Dim reply = client.DownloadString("http://www.predictresults.co.uk/pradeep/PYBUsers.php")
+        Dim reply = client.DownloadString("http://www.predictresults.co.uk/API/PYBUsers.php")
         Dim f = JsonConvert.DeserializeObject(Of UserList)(reply)
 
         Dim dictionary As New Dictionary(Of Integer, String)
@@ -115,7 +115,7 @@ Public Class FixtureBuilder
 
     Public Function getIds()
         Dim client = New WebClient
-        Dim reply = client.DownloadString("http://www.predictresults.co.uk/pradeep/PYBUsers.php")
+        Dim reply = client.DownloadString("http://www.predictresults.co.uk/API/PYBUsers.php")
         Dim f = JsonConvert.DeserializeObject(Of UserList)(reply)
 
         Dim list As New List(Of Integer)
@@ -130,7 +130,7 @@ Public Class FixtureBuilder
 
     Public Function getPRUsers()
         Dim client = New WebClient
-        Dim reply = client.DownloadString("http://www.predictresults.co.uk/pradeep/PRUsers.php")
+        Dim reply = client.DownloadString("http://www.predictresults.co.uk/API/PRUsers.php")
         Dim f = JsonConvert.DeserializeObject(Of UserList)(reply)
 
         Dim list As New List(Of String)

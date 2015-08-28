@@ -28,23 +28,27 @@ Partial Class RegistrationForm
         Me.registerButton = New System.Windows.Forms.Button()
         Me.closeButton = New System.Windows.Forms.Button()
         Me.LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.emailTextBox = New System.Windows.Forms.TextBox()
+        Me.passwordTextBox = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'userLabel
         '
-        Me.userLabel.Location = New System.Drawing.Point(364, 133)
+        Me.userLabel.Location = New System.Drawing.Point(244, 117)
         Me.userLabel.Name = "userLabel"
         Me.userLabel.Size = New System.Drawing.Size(64, 26)
         Me.userLabel.TabIndex = 5
         Me.userLabel.Text = "Username"
-        Me.userLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.userLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'usernameTextBox
         '
         Me.usernameTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.usernameTextBox.Location = New System.Drawing.Point(247, 153)
+        Me.usernameTextBox.Location = New System.Drawing.Point(334, 121)
         Me.usernameTextBox.Name = "usernameTextBox"
-        Me.usernameTextBox.Size = New System.Drawing.Size(300, 20)
+        Me.usernameTextBox.Size = New System.Drawing.Size(213, 20)
         Me.usernameTextBox.TabIndex = 0
         '
         'registerButton
@@ -82,12 +86,50 @@ Partial Class RegistrationForm
     "t a member please go to http://www.predictresults.co.uk/register-3/"
         Me.LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'emailTextBox
+        '
+        Me.emailTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.emailTextBox.Location = New System.Drawing.Point(334, 173)
+        Me.emailTextBox.Name = "emailTextBox"
+        Me.emailTextBox.Size = New System.Drawing.Size(213, 20)
+        Me.emailTextBox.TabIndex = 10
+        '
+        'passwordTextBox
+        '
+        Me.passwordTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.passwordTextBox.Location = New System.Drawing.Point(334, 147)
+        Me.passwordTextBox.Name = "passwordTextBox"
+        Me.passwordTextBox.Size = New System.Drawing.Size(213, 20)
+        Me.passwordTextBox.TabIndex = 11
+        '
+        'Label1
+        '
+        Me.Label1.Location = New System.Drawing.Point(244, 143)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(64, 26)
+        Me.Label1.TabIndex = 12
+        Me.Label1.Text = "Password"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label2
+        '
+        Me.Label2.Location = New System.Drawing.Point(244, 169)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(74, 26)
+        Me.Label2.TabIndex = 13
+        Me.Label2.Text = "Email Address"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
         'RegistrationForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ClientSize = New System.Drawing.Size(798, 402)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.passwordTextBox)
+        Me.Controls.Add(Me.emailTextBox)
         Me.Controls.Add(Me.LinkLabel)
         Me.Controls.Add(Me.closeButton)
         Me.Controls.Add(Me.registerButton)
@@ -106,4 +148,8 @@ Partial Class RegistrationForm
     Friend WithEvents registerButton As System.Windows.Forms.Button
     Friend WithEvents closeButton As System.Windows.Forms.Button
     Friend WithEvents LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents emailTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents passwordTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 End Class

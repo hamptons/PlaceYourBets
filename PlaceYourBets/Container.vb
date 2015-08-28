@@ -207,13 +207,17 @@ Public Class ContainerForm
         Me.submitGroupBox.Visible = False
 
         Dim name As String = ""
+        Try
+            For Each user As Users In userResultList
+                userDictionary.TryGetValue(user.UserID, name)
+                Dim review As New PredictionLeagueUserControl(name, user.correct)
+                Me.MainFlowLayoutPanel.Controls.Add(review)
 
-        For Each user As Users In userResultList
-            userDictionary.TryGetValue(user.UserID, name)
-            Dim review As New PredictionLeagueUserControl(name, user.correct)
-            Me.MainFlowLayoutPanel.Controls.Add(review)
-
-        Next
+            Next
+        Catch ex As Exception
+            MessageBox.Show("Unable to display current scores.")
+        End Try
+        
     End Sub
 
     Private Sub logOutButton_Click(sender As System.Object, e As System.EventArgs) Handles logOutButton.Click
@@ -377,7 +381,7 @@ Public Class ContainerForm
             For Each fixture As Fixture In fixtures
 
                 ProgressBarForm.ProgressBar1.PerformStep()
-                Dim UrlBase As String = "http://www.predictresults.co.uk/pradeep/InsertDataUsingSP.php?userid="
+                Dim UrlBase As String = "http://www.predictresults.co.uk/API/InsertDataUsingSP.php?userid="
                 Dim user As String = currentUser.ToString()
                 Dim fixtureID As String = fixture.ID.ToString()
                 Dim prediction As String = fixture.Prediction.ToString()

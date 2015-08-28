@@ -225,7 +225,7 @@ Public Class FixturesForm
         ProgressBar1.Visible = True
 
         For Each fixture As Fixture In fixtures
-            Dim UrlBase As String = "http://www.predictresults.co.uk/pradeep/InsertDataUsingSP.php?userid="
+            Dim UrlBase As String = "http://www.predictresults.co.uk/API/InsertDataUsingSP.php?userid="
             Dim user As String = currentUser.ToString()
             Dim fixtureID As String = fixture.ID.ToString()
             Dim prediction As String = fixture.Prediction.ToString()
